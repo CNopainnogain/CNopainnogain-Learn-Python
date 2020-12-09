@@ -1,0 +1,21 @@
+
+import math
+
+def quadratic(a, b, c):
+    delta = (b**2-4*a*c)
+    if not isinstance(a, (int , float)):
+        raise TypeError('bad operand type a')
+    elif not isinstance(b, (int , float)):
+        raise TypeError('bad operand type b')
+    elif not isinstance(c, (int , float)):
+        raise TypeError('bad operand type c')
+    elif (b ** 2 - 4 * a * c) < 0:
+        return 'no solution'
+    elif a == 0:
+        return 'insignificance'
+    else:
+        x1 = (-b + math.sqrt(delta)) / (2*a)
+        x2 = (-b - math.sqrt(delta)) / (2*a)
+        return x1, x2
+
+    return nx
