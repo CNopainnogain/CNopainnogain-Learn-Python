@@ -1,4 +1,7 @@
 
+定义函数
+Defining functions
+
 import math
 
 def quadratic(a, b, c):
